@@ -1,0 +1,152 @@
+*{
+	box-sizing: border-box;
+}
+input {
+	outline: none;
+}
+.App {
+  text-align: center;
+  margin: auto;
+  width: 800px;
+  height: 500px;
+  border: 1px solid black;
+}
+.yes {
+	width: 370px;
+	height: 235px;
+	border: 1px solid black;
+	margin: auto;
+	margin-top: 25px;
+	border-radius: 15px;
+	position: relative;
+	background-image: url("./resources/creditcard.png");
+	color: white;
+}
+.no {
+	width: 370px;
+	height: 235px;
+	border: 3px solid red;
+	margin: auto;
+	margin-top: 25px;
+	border-radius: 15px;
+	position: relative;
+	background-image: url("./resources/creditcard.png");
+	color: white;
+}
+.info {
+	margin: auto;
+	margin-top: 10px;
+	width: 370px;
+	border: 1px solid black;
+	display: flex;
+}
+.large {
+	width: 48%;
+}
+.small {
+	width: 32%;
+}
+.num {
+	position: absolute;
+	top: 140px;
+	font-size: 30px;
+	width: 320px;
+	text-align: left;
+	margin-left: 26px;
+}
+.nam {
+	position: absolute;
+	bottom: 15px;
+	font-size: 22px;
+	left: 20px;
+	width: 200px;
+	text-align: left;
+}
+.exp {
+	position: absolute;
+	bottom: 20px;
+	right: 30px;
+	width: 56px;
+	text-align: left;
+}
+.good {
+	position: absolute;
+	bottom: 22px;
+	right: 90px;
+	font-size: 6px;
+	width: 30px;
+}
+.cod {
+	position: absolute;
+	top: 12px;
+	right: 115px;
+}
+.logo {
+	position: absolute;
+	top: 20px;
+	right: 1px;
+	height: 60px;
+	width: 100px;
+	background-image: url("./resources/question.svg");
+	background-position: center;
+	background-size: 100px 45px;
+	background-repeat: no-repeat;
+	margin-right: 8px;
+}
+.visa {
+	position: absolute;
+	top: 20px;
+	right: 1px;
+	height: 60px;
+	width: 100px;
+	background-image: url("./resources/visa.png");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-right: 8px;
+}
+.master-card {
+	position: absolute;
+	top: 20px;
+	right: 1px;
+	height: 60px;
+	width: 100px;
+	background-image: url("./resources/mc.png");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-right: 8px;
+}
+.discover {
+	position: absolute;
+	top: 20px;
+	right: 1px;
+	height: 60px;
+	width: 100px;
+	background-image: url("./resources/discover.png");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-right: 8px;
+}
+.american-express {
+	position: absolute;
+	top: 20px;
+	right: 1px;
+	height: 60px;
+	width: 100px;
+	background-image: url("./resources/amex.png");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-right: 8px;
+}
+
+
+
+
+
+
+
+
+
