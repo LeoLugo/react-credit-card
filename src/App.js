@@ -27,18 +27,32 @@ class App extends Component {
 		}
 	}
 
+	spaces = (nums) => {
+        switch(nums.length) {
+            case 4 :
+            return nums + " "
+            case 9 :
+            return nums + " "
+            case 14 :
+            return nums + " "
+            default:
+            return nums
+        }
+    }
+
 
 	manageCardNum = (e) => {
 		let val = e.target.value
 		let obj = valid.number(val)
-		if(obj.card !== null){
+
+	if(obj.card !== null){
 		this.setState({
-			card : e.target.value,
+			card : this.spaces(val),
 			cardtype: obj.card.type,
 			passed: obj.isValid
 		})} else {
 			this.setState({
-				card: e.target.value,
+				card: this.spaces(val),
 				cardtype: "logo",
 				passed: obj.isValid
 			})
@@ -88,7 +102,7 @@ class App extends Component {
       	</div>
       	<div className="info">
       		<form>
-      			<input onBlur={this.check} maxLength="16" placeholder="Card Number" className="large" onChange={this.manageCardNum} value={this.state.card} type="text" name="card" />
+      			<input onBlur={this.check} maxLength="19" placeholder="Card Number" className="large" onChange={this.manageCardNum} value={this.state.card} type="text" name="card" />
       			<input placeholder="Full Name" className="large" onChange={this.manageCardName} value={this.state.name} type="text" name="name"/>
       			<input onBlur={this.check} maxLength="5" placeholder="Exp Date 06/19" className="small" onChange={this.manageCardExp} value={this.state.exp} type="text" name="exp"/>
       			<input onBlur={this.check} maxLength="3" placeholder="CVV" className="small" onChange={this.manageCardCode} value={this.state.code} type="text" name="code"/>
