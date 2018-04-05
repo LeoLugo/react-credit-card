@@ -78,8 +78,8 @@ input {
 }
 .cod {
 	position: absolute;
-	top: 12px;
-	right: 115px;
+	top: 60px;
+	right: 120px;
 }
 .logo {
 	position: absolute;
@@ -141,7 +141,13 @@ input {
 	background-repeat: no-repeat;
 	margin-right: 8px;
 }
-
+.security {
+	position: absolute;
+	font-size: 6px;
+	right: 120px;
+	top: 40px;
+	width: 30px;
+}
 
 
 
